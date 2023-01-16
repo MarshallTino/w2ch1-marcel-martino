@@ -7,7 +7,9 @@
     "prebuild": "rimraf dist/",
     "build:dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build-styles": "sass sass/styles.scss css/styles.css",
+    "build-styles-watch": "sass sass/styles.scss css.styles.css --watch"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +17,7 @@
   "devDependencies": {
     "husky": "^8.0.0",
     "parcel": "^2.8.2",
-    "rimraf": "^4.0.7"
+    "rimraf": "^4.0.7",
+    "sass": "^1.57.1"
   }
 }
