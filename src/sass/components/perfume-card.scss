@@ -2,16 +2,24 @@
 @use "../variables/typography";
 @use "../functions/functions";
 
+body {
+  background-color: colors.$secondary-color;
+}
 .product-card {
-  width: 100%;
+  margin: 40px;
+  background-color: white;
+  width: 345px;
   display: flex;
   flex-wrap: wrap;
+
+  border-radius: 12px;
   & img {
+    max-width: 100%;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
   }
 }
-.perfume-card__text {
+.perfume-card__info {
   margin: 15px;
   font-family: typography.$main-typography;
   color: colors.$font-color-main;
@@ -20,7 +28,7 @@
   width: 100%;
   max-width: 313px;
 
-  & h2 {
+  & .product-type {
     font-weight: 150;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -42,7 +50,7 @@
 }
 
 .perfume__price {
-  margin-left: 30px;
+  margin-left: 0px;
   align-items: center;
   display: flex;
   width: 100%;
@@ -67,8 +75,9 @@
   font-family: typography.$main-typography;
   font-weight: 600;
   margin: 15px;
-  margin-left: 30px;
+  margin-left: 0px;
   background-color: colors.$main-color;
+  border-style: none;
   border-color: colors.$main-color;
   border-radius: 8px;
   height: 45px;
