@@ -62,3 +62,15 @@
     text-decoration: line-through;
   }
 }
+.add-to-cart__button {
+  width: 100%;
+  font-family: typography.$main-typography;
+  font-weight: 600;
+  margin: 15px;
+  margin-left: 30px;
+  background-color: colors.$main-color;
+  border-color: colors.$main-color;
+  border-radius: 8px;
+  height: 45px;
+  color: white;
+}
