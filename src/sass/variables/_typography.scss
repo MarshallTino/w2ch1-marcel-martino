@@ -1,5 +1,5 @@
-@import url(https://fonts.google.com/specimen/Montserrat);
-@import url(https://fonts.google.com/specimen/Fraunces);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
 
-$main-typography: "Montserrat";
-$secondary-typography: "Fraunces";
+$main-typography: "Montserrat", sans-serif;
+$secondary-typography: "Fraunces", sans-serif;

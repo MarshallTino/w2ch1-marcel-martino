@@ -1,0 +1,64 @@
+@use "../variables/colors";
+@use "../variables/typography";
+@use "../functions/functions";
+
+.product-card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  & img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+}
+.perfume-card__text {
+  margin: 15px;
+  font-family: typography.$main-typography;
+  color: colors.$font-color-main;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 313px;
+
+  & h2 {
+    font-weight: 150;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  & h1 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: 900;
+    font-size: 35px;
+    color: colors.$font-color-secondary;
+    font-family: typography.$secondary-typography;
+  }
+  & p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+.perfume__price {
+  margin-left: 30px;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  max-width: 313px;
+  font-family: typography.$main-typography;
+  & h2 {
+    margin: 0px;
+    font-size: 40px;
+    color: colors.$main-color;
+    font-family: typography.$secondary-typography;
+  }
+
+  & h3 {
+    font-size: 14px;
+    margin-left: 25px;
+    color: colors.$font-color-main;
+    text-decoration: line-through;
+  }
+}
